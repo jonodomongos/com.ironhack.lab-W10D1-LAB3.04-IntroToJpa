@@ -1,4 +1,4 @@
-package com.ironhack.lab_W10D1_LAB3.__IntroToJpa;
+package com.ironhack.aeropuerto;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

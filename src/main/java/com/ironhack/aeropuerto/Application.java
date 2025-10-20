@@ -1,4 +1,4 @@
-package com.ironhack.lab_W10D1_LAB3.__IntroToJpa;
+package com.ironhack.aeropuerto;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
