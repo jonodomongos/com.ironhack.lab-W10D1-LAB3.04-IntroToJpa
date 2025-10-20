@@ -1,0 +1,56 @@
+INSTRUCTIONS:
+Vas a crear tres clases principales y una clase enum: ReservaVuelo, Cliente y Vuelo.
+La clase enum se llamará CustomerStatus.
+
+-> Enum EstadoCliente
+Crea una clase enum llamada CustomerStatus con los siguientes valores:
+    - ORO
+	- PLATA
+	- NINGUNA
+
+-> Clase Cliente
+Crea una clase llamada Cliente con las siguientes variables:
+	- idCliente (integer): identificador único autogenerado, miembro privado.
+	- nombreCliente (string): miembro privado.
+	- estadoCliente (string): representa un enum, miembro privado.
+	- millasTotalesCliente (integer): miembro privado.
+
+    - Añade un constructor vacío para que Hibernate pueda crear nuevas instancias de la clase.
+    - Añade un constructor con parámetros que reciba nombreCliente, estadoCliente y millasTotalesCliente.
+    - Añade métodos getter y setter públicos para cada variable.
+
+-> Clase Vuelo
+Crea una clase llamada Vuelo con las siguientes variables:
+	- idVuelo (integer): identificador único autogenerado, miembro privado.
+	- numeroVuelo (string): identificador único, miembro privado.
+	- aeronave (string): miembro privado.
+	- totalAsientosAeronave (integer): miembro privado.
+	- millasVuelo (integer): miembro privado.
+
+	- Añade un constructor vacío para que Hibernate pueda crear nuevas instancias de la clase.
+	- Añade un constructor con parámetros que reciba numeroVuelo, aeronave, totalAsientosAeronave y millasVuelo.
+	- Añade métodos getter y setter públicos para cada variable.
+
+-> Clase ReservaVuelo
+Crea una clase llamada ReservaVuelo con las siguientes variables:
+	- idReserva (integer): identificador único autogenerado, miembro privado.
+	- idCliente (integer): miembro privado.
+	- idVuelo (integer): miembro privado.
+
+	- Añade un constructor vacío para que Hibernate pueda crear nuevas instancias de la clase.
+	- Añade un constructor con parámetros que reciba idReserva e idVuelo.
+	- Añade métodos getter y setter públicos para cada variable.
+	- Añade restricciones de clave foránea en la clase ReservaVuelo para que idCliente e idVuelo hagan referencia respectivamente a las tablas de Clientes y Vuelos.
+
+TAREAS:
+
+	1.	Crea todos los repositorios y entidades necesarios para la tabla Cliente.
+	2.	Crea todos los repositorios y entidades necesarios para la tabla Vuelo.
+	3.	Crea todos los repositorios y entidades necesarios para la tabla ReservaVuelo.
+	4.	Escribe tests para comprobar tu capacidad de crear nuevos clientes.
+	5.	Escribe tests para comprobar tu capacidad de crear nuevos vuelos.
+	6.	Escribe tests para comprobar tu capacidad de buscar clientes por nombre.
+	7.	Escribe tests para comprobar tu capacidad de buscar clientes por estado (status).
+	8.	Escribe tests para comprobar tu capacidad de buscar vuelos por número de vuelo.
+	9.	Escribe tests para comprobar tu capacidad de buscar aeronaves con nombres que contengan “Boeing”.
+	10.	Escribe tests para comprobar tu capacidad de buscar vuelos con una distancia mayor a 500 millas.
